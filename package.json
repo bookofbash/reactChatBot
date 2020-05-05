@@ -3,16 +3,20 @@
   "version": "1.0.0",
   "description": "React bot for webpage",
   "main": "index.js",
-  "engines":{
-    "node":"10.15.1",
-    "npm":"6.4.1"
+  "engines": {
+    "node": "10.15.1",
+    "npm": "6.4.1"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "backend": "nodemon index.js"
   },
   "author": "Bashir Harrell",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "dialogflow": "^1.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3"
   }
 }
