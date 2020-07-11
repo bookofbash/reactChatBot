@@ -241,7 +241,7 @@ class Chatbot extends Component {
                     <nav>
                         <div className= 'nav-wrapper' >
                         {/* eslint-disable-next-line */}
-                            <a href="#" className="brand-logo">MealBot</a>
+                            <a href="#" className="brand-logo">LearnBot</a>
                             <ul id="nav-mobile" className="right hide-on-med-and-down">
                                 <li><a href="/" onClick={this.show}>Show</a></li>
                             </ul>
