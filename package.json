@@ -12,17 +12,19 @@
     "backend": "nodemon index.js",
     "frontend": "npm run start --prefix client",
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Bashir Harrell",
   "license": "ISC",
   "dependencies": {
     "actions-on-google": "^2.12.0",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "dialogflow": "^1.2.0",
     "dialogflow-fulfillment": "^0.6.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "google-oauth-jwt": "^0.2.0",
     "mongoose": "^5.9.16",
     "nodemon": "^2.0.3"
   },

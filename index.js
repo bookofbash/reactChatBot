@@ -5,7 +5,7 @@ const app = express();
 
 const config = require('./config/keys');
 const mongoose = require('mongoose');
-
+// const cors = require('cors')
 
 require('./models/Registration');
 require('./models/Demand');
@@ -13,6 +13,7 @@ require('./models/Courses');
 
 mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true  });
 app.use(bodyParser.json());
+// app.use(cors)
 
 require('./routes/dialogFlowRoutes')(app);
 require('./routes/fulfillmentRoutes')(app);
